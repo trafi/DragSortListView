@@ -338,7 +338,7 @@ public class DragSortController extends SimpleFloatViewManager implements View.O
             final int rawY = (int) ev.getRawY();
 
             View dragBox = id == 0 ? item : (View) item.findViewById(id);
-            if (dragBox != null) {
+            if (dragBox != null && dragBox.isShown()) {
                 dragBox.getLocationOnScreen(mTempLoc);
 
                 if (rawX > mTempLoc[0] && rawY > mTempLoc[1] &&
