@@ -5,7 +5,7 @@ android {
     buildToolsVersion rootProject.buildToolsVersion
 
     dependencies {
-        compile 'com.android.support:support-v4:19.0.1'
+        compile 'com.android.support:support-v4:19.1.0'
     }
 }
 
