@@ -9,6 +9,21 @@ android {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
     }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            multiDexEnabled true
+        }
+        dev {
+            minifyEnabled true
+            multiDexEnabled false
+        }
+        release {
+            minifyEnabled true
+            multiDexEnabled false
+        }
+    }
 }
 
 dependencies {
