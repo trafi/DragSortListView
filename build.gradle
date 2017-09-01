@@ -27,7 +27,7 @@ android {
 }
 
 dependencies {
-    api "com.android.support:support-v4:$supportLibVersion"
+    implmentation "com.android.support:support-v4:$supportLibVersion"
 }
 
 
